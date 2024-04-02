@@ -1,6 +1,9 @@
 header {
   background-color: #242222;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
   img {
-    width: 12rem;
+    width: 10rem;
   }
 }

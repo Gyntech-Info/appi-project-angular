@@ -1,0 +1,21 @@
+.header-container {
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 1rem;
+    flex: 1;
+    li {
+      a {
+        color: #fff;
+      }
+      a:hover {
+        color: rgb(33, 36, 189);
+      }
+    }
+  }
+}
+
+.body-container {
+  padding-top: 3rem;
+}

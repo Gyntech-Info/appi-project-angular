@@ -1,0 +1,13 @@
+footer {
+  background-color: #242222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1.5rem;
+  p {
+    color: #fff;
+    span {
+      color: rgb(33, 36, 189);
+    }
+  }
+}

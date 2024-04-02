@@ -1,6 +1,10 @@
 <div class="header-container">
   <app-header>
-    <p>teste</p>
+    <ul>
+      <li *ngFor="let item of menu">
+        <a [routerLink]="item.path">{{ item.name }}</a>
+      </li>
+    </ul>
   </app-header>
 </div>
 <div class="body-container">
