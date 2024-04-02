@@ -4,9 +4,9 @@ import { Component } from '@angular/core';
   selector: 'app-crud',
   standalone: true,
   imports: [],
-  templateUrl: './crud.component.html',
-  styleUrl: './crud.component.scss'
+  templateUrl: './crud.html',
+  styleUrl: './crud.scss'
 })
-export class CrudComponent {
+export class Crud {
 
 }

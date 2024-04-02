@@ -1,20 +1,20 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './pages/home/home.component';
-import { ModulesComponent } from './pages/modules/modules.component';
-import { CrudComponent } from './pages/crud/crud.component';
+import { Home } from './pages/home/home';
+import { Modules } from './pages/modules/modules';
+import { Crud } from './pages/crud/crud';
 
 export const routes: Routes = [
   {
     path: 'home',
-    component: HomeComponent,
+    component: Home,
   },
   {
     path: 'modules',
-    component: ModulesComponent,
+    component: Modules,
   },
   {
     path: 'crud',
-    component: CrudComponent,
+    component: Crud,
   },
 
   { path: '**', pathMatch: 'full', redirectTo: 'home' },
