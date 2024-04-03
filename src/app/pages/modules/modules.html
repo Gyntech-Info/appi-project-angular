@@ -1,1 +1,12 @@
-<p>modules works!</p>
+<div class="content-module">
+  <div>
+    @if(modulesData){ @for(item of modulesData; track item){
+
+    <app-cards [data]="item">
+      <a (click)="loadTemplate(item.template)">Clique e veja</a>
+    </app-cards>
+
+    } }
+  </div>
+  <span *ngIf="selectedTemplate" [innerText]="selectedTemplate"></span>
+</div>

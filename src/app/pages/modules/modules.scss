@@ -1,0 +1,21 @@
+.content-module {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+    a:hover {
+      color: rgb(0 3 171);
+    }
+  }
+  span {
+    width: 33rem;
+  }
+}
