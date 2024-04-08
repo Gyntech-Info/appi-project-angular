@@ -1,5 +1,8 @@
 <div class="content-module">
   <div>
+    <app-banner [isImageSize]="true"></app-banner>
+  </div>
+  <div>
     @if(modulesData){ @for(item of modulesData; track item){
 
     <app-cards [data]="item">

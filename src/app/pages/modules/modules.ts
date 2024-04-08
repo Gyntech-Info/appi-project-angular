@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
-import { CardsComponent } from "../../shared/components/cards/cards.component";
 import { RouterModule } from "@angular/router";
 import { CommonModule } from "@angular/common";
+
+import { CardsComponent } from "../../shared/components/cards/cards.component";
+import { BannerComponent } from "../../shared/components/banner/banner.component";
 
 @Component({
   selector: 'app-modules',
   standalone: true,
-  imports: [RouterModule, CommonModule, CardsComponent],
+  imports: [RouterModule, CommonModule, CardsComponent, BannerComponent],
   templateUrl: './modules.html',
   styleUrl: './modules.scss'
 })

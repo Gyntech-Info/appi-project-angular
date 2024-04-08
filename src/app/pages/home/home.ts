@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
+import { BannerComponent } from "../../shared/components/banner/banner.component";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [],
+  imports: [BannerComponent],
   templateUrl: './home.html',
   styleUrl: './home.scss'
 })
 export class Home {
-  public title: string = 'Bem vindo ao APPI Project Angular'
-  public description: string = 'Projeto de estudos desenvolvido com a versão 17 do framework!'
+
 }

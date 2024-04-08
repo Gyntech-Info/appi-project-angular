@@ -1,20 +1,5 @@
 .container-home {
   display: flex;
   justify-content: center;
-  .title-content {
-    width: 100%;
-    max-width: 40rem;
-    text-align: center;
-    .title-home {
-      font-size: 2rem;
-      line-height: 3rem;
-    }
-    .description-home {
-      font-size: 1.2rem;
-      line-height: 2rem;
-    }
-    img {
-      width: 20rem;
-    }
-  }
+  
 }
