@@ -4,6 +4,8 @@ import { CommonModule } from "@angular/common";
 
 import { CardsComponent } from "../../shared/components/cards/cards.component";
 import { BannerComponent } from "../../shared/components/banner/banner.component";
+import { IModulesData } from "../../shared/models/modules-data.interface";
+
 
 @Component({
   selector: 'app-modules',
@@ -14,7 +16,7 @@ import { BannerComponent } from "../../shared/components/banner/banner.component
 })
 export class Modules {
 
-  public modulesData = [
+  public modulesData: IModulesData[] = [
     {
       name: 'NgIf e else Sintaxe', template: `
   <ng-container *ngIf="condicional; else outro_template">
@@ -54,6 +56,7 @@ export class Modules {
 }
 `,
     },
+    { name: '', template: '' }
   ];
 
   selectedTemplate!: string
