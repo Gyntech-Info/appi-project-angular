@@ -1,4 +1,4 @@
-export interface IModulesData {
+export interface IPropertiesData {
   name: string;
   template: string;
 }

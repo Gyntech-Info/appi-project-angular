@@ -1,0 +1,13 @@
+<div>
+  @if(directivesData && isVisible){ @for(item of directivesData; track item){
+
+  <app-cards [data]="item">
+    <a (click)="loadTemplate(item.template)">Clique e veja</a>
+  </app-cards>
+
+  } }
+</div>
+<span
+  *ngIf="selectedTemplate && isVisible"
+  [innerText]="selectedTemplate"
+></span>

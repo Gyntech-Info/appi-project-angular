@@ -2,14 +2,12 @@
   <div>
     <app-banner [isImageSize]="true"></app-banner>
   </div>
-  <div>
-    @if(modulesData){ @for(item of modulesData; track item){
-
-    <app-cards [data]="item">
-      <a (click)="loadTemplate(item.template)">Clique e veja</a>
-    </app-cards>
-
-    } }
+  <div class="header-module">
+    <h1>Diretivas:</h1>
+    <button (click)="setStatus()">{{buttonName}}</button>
   </div>
-  <span *ngIf="selectedTemplate" [innerText]="selectedTemplate"></span>
+
+  <div>
+    <app-directives></app-directives>
+  </div>
 </div>
