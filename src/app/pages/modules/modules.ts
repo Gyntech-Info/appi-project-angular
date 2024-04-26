@@ -4,11 +4,12 @@ import { CommonModule } from "@angular/common";
 
 import { BannerComponent } from "../../shared/components/banner/banner.component";
 import { DirectivesComponent } from "../../components/modules/directives/directives.component";
+import { ContentComponent } from "../../components/modules/content/content.component";
 
 @Component({
   selector: 'app-modules',
   standalone: true,
-  imports: [RouterModule, CommonModule, BannerComponent, DirectivesComponent],
+  imports: [RouterModule, CommonModule, BannerComponent, DirectivesComponent, ContentComponent],
   templateUrl: './modules.html',
   styleUrl: './modules.scss'
 })

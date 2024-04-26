@@ -8,8 +8,7 @@
   </div>
 
   <div>
-    <app-directives
-      [isVisible]="isVisible"
-    ></app-directives>
+    <app-directives [isVisible]="isVisible"></app-directives>
+    <app-content *ngIf="!isVisible"></app-content>
   </div>
 </div>
