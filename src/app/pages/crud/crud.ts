@@ -11,4 +11,6 @@ import { ListComponent } from "../../components/crud/list/list.component";
 })
 export class Crud {
 
+
+
 }
