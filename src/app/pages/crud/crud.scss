@@ -1,4 +1,28 @@
-.banner-container {
-  display: flex;
-  justify-content: center;
+.container-drawer {
+  width: 100%;
+  min-height: 300px;
+  .content-drawer {
+    width: 10rem;
+    height: 100%;
+    h3 {
+      width: 100%;
+      text-align: center;
+      font-size: 25px;
+      font-weight: 600;
+    }
+    .menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .content-crud-container {
+    display: flex;
+    height: 100%;
+    width: -webkit-fill-available;
+    .menu-toggle {
+      padding: 1rem;
+    }
+  }
 }

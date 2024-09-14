@@ -15,6 +15,12 @@ export const routes: Routes = [
   {
     path: 'crud',
     component: Crud,
+    children: [
+      {
+        path: '',
+        loadChildren: () => import('./pages/crud/crud.routes')
+      }
+    ]
   },
 
   { path: '**', pathMatch: 'full', redirectTo: 'home' },

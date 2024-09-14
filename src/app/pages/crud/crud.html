@@ -1,6 +1,19 @@
-<div class="banner-container">
-  <app-banner [isImageSize]="true"></app-banner>
-</div>
-<div class="list-container">
-  <app-list></app-list>
-</div>
+<mat-drawer-container class="container-drawer" autosize>
+  <mat-drawer #drawer class="content-drawer" mode="side">
+    <h3>Crud Menu</h3>
+    <ul class="menu">
+      <li class="menu-item">
+        <a routerLink="/crud/clients" class="link-menu">Clientes</a>
+      </li>
+    </ul>
+  </mat-drawer>
+
+  <div class="content-crud-container">
+    <button type="button" mat-button (click)="drawer.toggle()">
+      <div (click)="changeStatus()" class="menu-toggle">
+        {{showFiller ? 'Hidden Menu' : 'Show Menu'}}
+      </div>
+    </button>
+    <router-outlet></router-outlet>
+  </div>
+</mat-drawer-container>

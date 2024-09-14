@@ -1,16 +1,21 @@
 import { Component } from '@angular/core';
-import { BannerComponent } from "../../shared/components/banner/banner.component";
-import { ListComponent } from "../../components/crud/list/list.component";
+import { MatButtonModule } from '@angular/material/button';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { RouterModule } from "@angular/router";
 
 @Component({
   selector: 'app-crud',
   standalone: true,
-  imports: [BannerComponent, ListComponent],
+  imports: [RouterModule, MatButtonModule, MatSidenavModule],
   templateUrl: './crud.html',
   styleUrl: './crud.scss'
 })
 export class Crud {
 
+  public showFiller = false;
 
+  changeStatus() {
+    this.showFiller = !this.showFiller;
+  }
 
 }

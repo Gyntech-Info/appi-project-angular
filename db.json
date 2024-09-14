@@ -1,0 +1,65 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin123",
+      "token": "token-admin-123"
+    },
+    {
+      "id": 2,
+      "username": "user1",
+      "password": "user123",
+      "token": "token-user1-123"
+    }
+  ],
+  "clients": [
+    {
+      "id": 1,
+      "name": "João Silva",
+      "cpf": "123.456.789-00",
+      "email": "joao.silva@example.com",
+      "address": {
+        "cep": "01001-000",
+        "logradouro": "Rua A",
+        "numero": "123",
+        "bairro": "Centro",
+        "complemento": "Apto 1",
+        "cidade": "São Paulo"
+      },
+      "birthdate": "1985-05-15"
+    },
+    {
+      "id": 2,
+      "name": "Maria Souza",
+      "cpf": "987.654.321-00",
+      "email": "maria.souza@example.com",
+      "address": {
+        "cep": "02002-000",
+        "logradouro": "Rua B",
+        "numero": "456",
+        "bairro": "Vila Nova",
+        "complemento": "Casa",
+        "cidade": "Rio de Janeiro"
+      },
+      "birthdate": "1990-10-25"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Notebook",
+      "price": 3500.00
+    },
+    {
+      "id": 2,
+      "name": "Smartphone",
+      "price": 1200.00
+    },
+    {
+      "id": 3,
+      "name": "Monitor",
+      "price": 800.00
+    }
+  ]
+}
