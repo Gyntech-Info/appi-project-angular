@@ -1,4 +1,11 @@
-.banner-container {
-  display: flex;
-  justify-content: center;
+.clients-container {
+  width: 100%;
+  .banner-container {
+    display: flex;
+    justify-content: center;
+  }
+  table {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
 }
