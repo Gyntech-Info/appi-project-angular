@@ -5,6 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class FacebookPixelService {
   private loadOk: boolean = false;
+  private id = ''
 
   public load() {
     if (!this.loadOk) {
@@ -43,7 +44,7 @@ export class FacebookPixelService {
       );
 
       (window as any).fbq.disablePushState = true;
-      (window as any).fbq('init', '251803964179465');
+      (window as any).fbq('init', this.id);
       (window as any).fbq('track', 'PageView');
 
       this.loadOk = true;

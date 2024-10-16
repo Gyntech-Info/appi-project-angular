@@ -11,10 +11,11 @@ declare global {
 })
 export class GoogleAnalyticsService {
 
+  private id = ''
   public loadGTM(): void {
     const gtagScript = document.createElement('script');
     gtagScript.async = true;
-    gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=AW-478367398';
+    gtagScript.src = `https://www.googletagmanager.com/gtag/js?id=${this.id}`;
     document.head.appendChild(gtagScript);
 
     gtagScript.onload = () => {
