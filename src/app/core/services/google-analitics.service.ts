@@ -12,6 +12,7 @@ declare global {
 export class GoogleAnalyticsService {
 
   private id = ''
+
   public loadGTM(): void {
     const gtagScript = document.createElement('script');
     gtagScript.async = true;
