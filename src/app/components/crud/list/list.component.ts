@@ -1,4 +1,4 @@
-import { CommonModule } from "@angular/common";
+
 import { Component } from '@angular/core';
 import { DialogComponent } from "../dialog/dialog.component";
 import {
@@ -9,7 +9,7 @@ import { MatButtonModule } from '@angular/material/button';
 @Component({
   selector: 'app-list',
   standalone: true,
-  imports: [CommonModule, MatButtonModule, DialogComponent],
+  imports: [MatButtonModule, DialogComponent],
   templateUrl: './list.component.html',
   styleUrl: './list.component.scss'
 })

@@ -1,9 +1,11 @@
 <div class="header-container">
   <app-header>
     <ul>
-      <li *ngFor="let item of menu">
-        <a [routerLink]="item.path">{{ item.name }}</a>
-      </li>
+      @for (item of menu; track item) {
+        <li>
+          <a [routerLink]="item.path">{{ item.name }}</a>
+        </li>
+      }
     </ul>
   </app-header>
 </div>

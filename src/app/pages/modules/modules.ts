@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterModule } from "@angular/router";
-import { CommonModule } from "@angular/common";
+
 
 import { BannerComponent } from "../../shared/components/banner/banner.component";
 import { DirectivesComponent } from "../../components/modules/directives/directives.component";
@@ -9,7 +9,7 @@ import { ContentComponent } from "../../components/modules/content/content.compo
 @Component({
   selector: 'app-modules',
   standalone: true,
-  imports: [RouterModule, CommonModule, BannerComponent, DirectivesComponent, ContentComponent],
+  imports: [RouterModule, BannerComponent, DirectivesComponent, ContentComponent],
   templateUrl: './modules.html',
   styleUrl: './modules.scss'
 })

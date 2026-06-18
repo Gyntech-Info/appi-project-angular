@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterModule, RouterOutlet } from '@angular/router';
-import { CommonModule } from '@angular/common';
+
 import { FooterComponent } from './core/template/footer/footer.component';
 import { HeaderComponent } from './core/template/header/header.component';
 
@@ -10,10 +10,9 @@ import { HeaderComponent } from './core/template/header/header.component';
   imports: [
     RouterModule,
     RouterOutlet,
-    CommonModule,
     HeaderComponent,
-    FooterComponent,
-  ],
+    FooterComponent
+],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
