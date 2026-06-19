@@ -4,12 +4,11 @@ import { DialogComponent } from "../dialog/dialog.component";
 import {
   MatDialog,
 } from '@angular/material/dialog';
-import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'app-list',
   standalone: true,
-  imports: [MatButtonModule, DialogComponent],
+  imports: [],
   templateUrl: './list.component.html',
   styleUrl: './list.component.scss'
 })
