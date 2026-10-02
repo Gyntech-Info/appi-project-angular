@@ -12,14 +12,12 @@ import { HeaderComponent } from './core/template/header/header.component';
     RouterOutlet,
     HeaderComponent,
     FooterComponent
-],
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
   public menu = [
     { name: 'Home', path: '' },
-    { name: 'Modulos', path: 'modules' },
-    { name: 'Crud', path: 'crud' },
   ];
 }

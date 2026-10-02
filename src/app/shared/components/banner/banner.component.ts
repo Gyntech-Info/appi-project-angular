@@ -12,7 +12,7 @@ export class BannerComponent {
   @Input()
   public title: string = 'Bem vindo ao APPI Project Angular'
   @Input()
-  public description: string = 'Projeto de estudos desenvolvido com a versão 17 a 21 do framework!'
+  public description: string = 'Projeto de estudos do framework!'
   @Input()
   isImageSize = false
 

@@ -1,0 +1,10 @@
+<div>
+  @for(item of directivesData; track item){
+  <app-cards [data]="item">
+    <a (click)="loadTemplate(item.template)">Clique e veja</a>
+  </app-cards>
+  }
+</div>
+@if (selectedTemplate) {
+<span [innerText]="selectedTemplate"></span>
+}
