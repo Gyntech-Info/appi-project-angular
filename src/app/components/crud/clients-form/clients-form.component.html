@@ -1,0 +1,18 @@
+<form [formGroup]="clientForm" (ngSubmit)="submitForm()">
+
+  <mat-form-field appearance="outline">
+    <mat-label>Nome</mat-label>
+    <input matInput placeholder="" formControlName="name">
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>CPF</mat-label>
+    <input matInput placeholder="" formControlName="cpf">
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>E-mail</mat-label>
+    <input matInput placeholder="" formControlName="email">
+  </mat-form-field>
+
+
+  <button type="submit" matButton>Enviar</button>
+</form>
